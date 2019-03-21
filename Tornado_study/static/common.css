@@ -1,0 +1,13 @@
+table td {
+    border-bottom: 1px solid #f41717;
+    border-left: 1px solid #ffe0e0;
+}
+
+table {border-spacing: 0px;border-right: 1px solid #ffe0e0;}
+
+table th {
+    border-top: 1px solid #ffe0e0;
+    border-bottom: 1px solid #ff0000;
+    background: black;
+    color: white;
+}

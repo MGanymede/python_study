@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{title}}</title>
+    <link rel="stylesheet" href="/static/common.css">
+</head>
+<body>
+    <div>
+        <a href="/"> <- 返回</a>
+    </div>
+    <table>
+        <tr>
+            <th>公寓名称</th>
+            <th>地址</th>
+            <th>地域</th>
+            <th>所属公司</th>
+            <th>宿舍面积</th>
+            <th>一房面积</th>
+            <th>二房面积</th>
+            <th>三房面积</th>
+            <th>平均租金（元/平米）</th>
+            <th>供应范围</th>
+        </tr>
+        {%for row in data%}
+            <tr>
+                {%for cell in row%}
+                    <td>{{escape(cell)}}</td>
+                {%end%}
+            </tr>
+        {%end%}
+    </table>
+    <div class="info">
+        {{escape(refreshDate)}}
+    </div>
+</body>
+</html>
