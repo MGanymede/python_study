@@ -1,9 +1,11 @@
 import os
 from abc import ABC
 
+
 import tornado.ioloop
 import tornado.web
-from Tornado_study.fetcher.Rent import Rent
+# from Tornado_study.fetcher.Rent import Rent
+from fetcher.Rent import Rent
 
 rent = Rent()
 
