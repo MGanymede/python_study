@@ -3,8 +3,6 @@ from mock import patch
 
 from  Tornado_study.fetcher.Rent import Rent
 
-
-
 class RentTest(unittest.TestCase):
 
     @patch('selenium.webdriver.Chrome')
